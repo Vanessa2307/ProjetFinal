@@ -1,3 +1,4 @@
+pwd
 #configuration du support#
 
 from Tkinter import* 
@@ -51,5 +52,5 @@ def alea():
 
 
 
-
+#main window
 fenetre.mainloop()
