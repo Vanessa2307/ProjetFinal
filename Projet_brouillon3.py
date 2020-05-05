@@ -46,11 +46,13 @@ def information_afficher():
     listeCombo.place(x=20,y=20)
     E_prenom_1.place(x=40,y=100)
     E_prenom_2.place(x=40,y=120)
+    B3.place(x=40,y=150)
 
 def information_effacer():
     listeCombo.place_forget()
     E_prenom_1.place_forget()
     E_prenom_2.place_forget()
+    B3.place_forget()
 
     # E_prenom_1= Entry()
 
@@ -76,6 +78,7 @@ L_prenom_1= Label (fenetre,text="Prénom 1 :",fg='#CC0033',width=20)
 L_prenom_2= Label (fenetre,text="Prénom 2 :",fg='#CC0033',width=20)
 E_prenom_1= Entry (fenetre,width=30)
 E_prenom_2= Entry (fenetre,width=30)
+B3= Button(fenetre,text="continuer",width=20,command=acceuil_afficher)
 listeSignes=["Gémeaux","Lion"]
 listeCombo=ttk.Combobox(fenetre, values=listeSignes)
 acceuil_afficher()
