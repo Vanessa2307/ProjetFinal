@@ -42,11 +42,13 @@ def tout_effacer():
 
 def information_afficher():
     tout_effacer()
-    
+
     listeCombo.place(x=20,y=20)
+    E_prenom_1.place(x=40,y=100)
 
 def information_effacer():
     listeCombo.place_forget()
+    E_prenom_1.place_forget()
 
     # E_prenom_1= Entry()
 
@@ -70,6 +72,7 @@ B2= Button(fenetre,text="continuer",width=20,command=information_afficher)
 #Elements de la fenetre de jeu
 L_prenom_1= Label (fenetre,text="Prénom 1 :",fg='#CC0033',width=20)
 L_prenom_2= Label (fenetre,text="Prénom 2 :",fg='#CC0033',width=20)
+E_prenom_1= Entry (fenetre,width=30)
 listeSignes=["Gémeaux","Lion"]
 listeCombo=ttk.Combobox(fenetre, values=listeSignes)
 acceuil_afficher()
